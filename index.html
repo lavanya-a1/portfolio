@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<title>Lavanya Adabala · Backend dev, bug catcher</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+<div class="topbar">
+  <p class="hand"></p>
+  <button
+    class="theme-toggle"
+    id="themeToggle"
+    type="button"
+    aria-label="Switch color theme"
+    aria-pressed="false">
+    ☾ Dark
+  </button>
+</div>
+
+<main class="wrap">
+
+<header class="hero">
+  <div>
+    <p class="hand">hello, world! (no segfault, promise)</p>
+    <h1>I’m Lavanya.<br>I build backends and <span class="hl">squash bugs.</span></h1>
+    <p class="lead">I build the brains behind the screen, chase down stubborn bugs, and occasionally pause to capture the world through my camera.</p>
+    <div class="btns">
+      <a class="btn" href="#projects">See my work</a>
+      <a class="btn alt" href="mailto:adabalalavanya01@gmail.com">Say hi</a>
+    </div>
+  </div>
+  <div class="mascot">
+    <button class="bugbtn" id="bug" aria-label="Poke the bug mascot">
+      <svg viewBox="0 0 240 240" role="img" aria-hidden="true">
+        <g stroke="#2d2340" stroke-width="6" stroke-linecap="round" fill="none">
+          <path d="M70 100 L36 78"/><path d="M68 130 L30 130"/><path d="M72 160 L40 184"/>
+          <path d="M170 100 L204 78"/><path d="M172 130 L210 130"/><path d="M168 160 L200 184"/>
+          <path d="M96 52 Q88 28 70 22"/><path d="M144 52 Q152 28 170 22"/>
+        </g>
+        <circle cx="69" cy="21" r="8" fill="#ff8fb1" stroke="#2d2340" stroke-width="5"/>
+        <circle cx="171" cy="21" r="8" fill="#ff8fb1" stroke="#2d2340" stroke-width="5"/>
+        <ellipse cx="120" cy="136" rx="62" ry="68" fill="#ff8fb1" stroke="#2d2340" stroke-width="6"/>
+        <path d="M120 70 V204" stroke="#2d2340" stroke-width="5"/>
+        <circle cx="94" cy="150" r="9" fill="#2d2340"/><circle cx="146" cy="168" r="9" fill="#2d2340"/><circle cx="100" cy="186" r="7" fill="#2d2340"/>
+        <rect x="58" y="62" width="124" height="62" rx="26" fill="#ffd86b" stroke="#2d2340" stroke-width="6"/>
+        <circle cx="94" cy="93" r="19" fill="#fff" stroke="#2d2340" stroke-width="5"/>
+        <circle cx="146" cy="93" r="19" fill="#c9b6ff" stroke="#2d2340" stroke-width="5"/>
+        <circle cx="146" cy="93" r="10" fill="#2d2340"/><circle cx="150" cy="89" r="3.5" fill="#fff"/>
+        <circle cx="96" cy="95" r="8" fill="#2d2340"/><circle cx="99" cy="92" r="3" fill="#fff"/>
+        <path d="M108 112 Q120 122 132 112" stroke="#2d2340" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <circle cx="72" cy="112" r="7" fill="#ff8fb1" opacity=".7"/><circle cx="168" cy="112" r="7" fill="#ff8fb1" opacity=".7"/>
+      </svg>
+    </button>
+    <div class="bubble" id="say" aria-live="polite">I’m Debug, the bug. Poke me!</div>
+    <p class="tiny">(one eye is a camera lens, see if you can spot it)</p>
+  </div>
+</header>
+
+<section id="projects">
+  <h2>Things I built</h2>
+  <p class="hand">pinned to the wall like polaroids</p>
+  <div class="grid">
+    <article class="pol">
+<div class="pic code-icon" style="background:var(--lav)">
+  <span>&lt;/&gt;</span>
+</div><h3>CodeAssessor</h3>
+<p class="cap">“College assessments, engineered carefully”</p>
+
+<p>
+  A multi-tenant coding and assessment platform for colleges.
+  It combines role-based access, tenant isolation, caching,
+  queued code execution, quizzes, automated course and contest content generation.
+</p>
+
+<div class="tags">
+  <span class="tag">Go / Gin</span>
+  <span class="tag">PostgreSQL</span>
+  <span class="tag">Redis</span>
+  <span class="tag">JWT / RBAC</span>
+  <span class="tag">React</span>
+  <span class="tag">Docker</span>
+  <span class="tag">Judge0</span>
+  <span class="tag">DigitalOcean</span>
+</div>
+
+<p style="margin-top:12px">
+  <a class="gh"
+     href="https://codeassessor.tech"
+     target="_blank"
+     rel="noopener">
+    Live demo ↗
+  </a>
+  &nbsp;·&nbsp;
+  <a class="gh"
+     href="https://github.com/lavanya-a1/code-assessor"
+     target="_blank"
+     rel="noopener">
+    Source code ↗
+  </a>
+</p>
+    </article>
+
+
+    <article class="pol">
+      <div class="pic" style="background:var(--mint)">🎟️</div>
+      <h3>EventMate</h3>
+      <p class="cap">“RSVP now, panic never”</p>
+      <p>Full-stack event platform for attendees, organizers and admins: seat reservations, waitlists, cancellations, QR tickets, check-in tracking, reminders and audit logs.</p>
+      <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span><span class="tag">Express.js</span></div>
+      <p style="margin-top:12px">
+      <a class="gh"
+        href="https://eventmate-frontend.onrender.com"
+        target="_blank"
+        rel="noopener">
+        Live demo ↗
+      </a>
+      &nbsp;·&nbsp;
+      <a class="gh"
+        href="https://github.com/lavanya-a1/eventmate"
+        target="_blank"
+        rel="noopener">
+        Source code ↗
+      </a>
+      </p>
+    </article>
+
+    <article class="pol">
+      <div class="pic" style="background:var(--sun)">🏏</div>
+      <h3>Agentic IPL Analytics</h3>
+      <p class="cap">“Howzat? A RAG pipeline!”</p>
+      <p>A RAG-powered IPL assistant that transforms PDF documents into searchable knowledge, combines keyword and semantic retrieval, and validates retrieved context before generating answers with an LLM.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">Groq</span><span class="tag">BM25</span></div>
+      <p style="margin-top:12px">
+      <a class="gh"
+      href="https://github.com/lavanya-a1/agentic-rag"
+      target="_blank"
+      rel="noopener">
+      Source code ↗
+      </a>
+      </p>
+    </article>
+
+
+    <article class="pol">
+      <div class="pic" style="background:var(--pink)">🗣️</div>
+      <h3>NLP to SQL</h3>
+      <p class="cap">“Ask nicely, get a query”</p>
+      <p>Type a question in plain English and get safe, schema-aware SQL back. Destructive queries are blocked, so no accidental DROP TABLE dramas.</p>
+      <div class="tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Gemini AI</span><span class="tag">MySQL</span></div>
+      <p style="margin-top:12px">
+      <a class="gh"
+        href="https://github.com/lavanya-a1/nlp-to-sql"
+        target="_blank"
+        rel="noopener">
+        Source code ↗
+      </a>
+      </p>
+    </article>
+
+
+  </div>
+
+  
+</section>
+
+<section id="skills">
+  <h2>My snack shelf</h2>
+  <p class="hand">tools I reach for (hover them, they wiggle)</p>
+  <div class="row"><h3>Languages</h3><div class="shelf"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">SQL</span><span class="chip">Go</span></div></div>
+  <div class="row"><h3>Backend and frontend</h3><div class="shelf"><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">REST APIs</span><span class="chip">Gin</span><span class="chip">React.js</span></div></div>
+  <div class="row"><h3>Databases</h3><div class="shelf"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span></div></div>
+  <div class="row"><h3>AI and LLMs</h3><div class="shelf"><span class="chip">RAG</span><span class="chip">LangChain</span><span class="chip">ChromaDB</span><span class="chip">Gemini API</span><span class="chip">Groq</span><span class="chip">Prompt Engineering</span></div></div>
+  <div class="row"><h3>Core CS and DevOps</h3><div class="shelf"><span class="chip">DSA</span><span class="chip">OOP</span><span class="chip">OS</span><span class="chip">DBMS</span><span class="chip">CN</span><span class="chip">Docker</span><span class="chip">Git</span><span class="chip">Postman</span></div></div>
+</section>
+
+<section id="stars">
+  <h2>Gold stars ⭐</h2>
+  <ul class="stars">
+    <li><span class="s">🐛</span><div><b>Finalist, Backend Debugging Competition</b><small>Found and fixed bugs across backend modules against the clock.</small></div></li>
+    <li><span class="s">🧩</span><div><b>400+ LeetCode problems solved</b><small>Data structures, algorithms and a lot of “why is this O(n²)?”</small></div></li>
+  </ul>
+</section>
+
+<section id="about">
+  <h2>The off-duty me</h2>
+  <div class="two" style="margin-top:20px">
+    <div class="note">
+      <h3>📸 Photography Club coordinator</h3>
+      <p>Since Sep 2024 I’ve organized campus events and kept the club collaborating. Herding photographers is its own debugging skill.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="big">Got a bug, a gig, or a good camera?</p>
+  <div class="foot-links">
+    <a class="btn" href="mailto:adabalalavanya01@gmail.com">Email me</a>
+    <a class="btn alt" href="https://github.com/lavanya-a1" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/lavanya-adabala" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <p class="hand">Made with Go, Node and a suspicious amount of snacks.</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

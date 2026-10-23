@@ -1,0 +1,13 @@
+{
+  "name": "lavanya-portfolio",
+  "version": "1.0.0",
+  "description": "Cute and funny personal portfolio for Lavanya Adabala",
+  "private": true,
+  "scripts": {
+    "start": "live-server --port=5500 --open=/",
+    "dev": "live-server --port=5500 --open=/"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
