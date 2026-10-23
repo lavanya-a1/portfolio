@@ -1,6 +1,6 @@
 # Lavanya's Portfolio
 
-A plain HTML, CSS and JavaScript site. There is no build step and no React, so it is easy to edit.
+A plain HTML, CSS and JavaScript site. There is no build step and no React
 
 ## Project structure
 
@@ -37,20 +37,3 @@ portfolio/
 npm install
 npm start
 ```
-
-4. Your browser opens at http://localhost:5500 and reloads on every save. Press `Ctrl + C` in the terminal to stop.
-
-If PowerShell blocks `npm` with a script-execution error, run `npm.cmd install` and `npm.cmd start`, or use Command Prompt instead.
-
-## Things to edit
-
-- **Text, projects, links:** `index.html`. Search for `<article class="pol">` to find the project cards.
-- **Colors:** the `--pink`, `--lav`, `--mint`, `--sun` variables at the top of `css/style.css`.
-- **Mascot jokes:** the `lines` array in `js/main.js`.
-- **Project links:** add `<a class="gh" href="YOUR_URL">GitHub</a>` inside each project card.
-
-## Deploying
-
-Upload the folder to any static host (GitHub Pages, Netlify, Vercel). No build command is needed, and the publish directory is the project root.
-
-Fonts (Fredoka, Patrick Hand) load from Google Fonts, so you need an internet connection to see them.
